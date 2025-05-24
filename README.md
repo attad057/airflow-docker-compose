@@ -1,18 +1,24 @@
 # airflow-docker-compose
 
 # Features
-**1.** Docker compose setup with the Airflow webserver, scheduler, a celery worker, celery flower, postgre sql, pgadmin and redis as services
-**2.** Redis as the celery broker
-**3.** Postgres, Pgadmin and airflow configuration saved in the .env file
-**4.** One-time init script to initialize the database and create a default user
-**3.** Dags are setup as a volume in /dags, update dags in this local folder to automatically sync to docker
-**4.** Logs are setup as a volume in /logs-volume. View services logs in this local folder
-**5*.** Postgre database is peristed in a docker volume: database-data, so that the database data won't depend on the container.
+**1:** Docker compose setup with the Airflow webserver, scheduler, a celery worker, celery flower, postgre sql, pgadmin and redis as services
+
+**2:** Redis as the celery broker
+
+**3:** Postgres, Pgadmin and airflow configuration saved in the .env file
+
+**4:** One-time init script to initialize the database and create a default user
+
+**5:** Dags are setup as a volume in /dags, update dags in this local folder to automatically sync to docker
+
+**6:** Logs are setup as a volume in /logs-volume. View services logs in this local folder
+
+**7:** Postgre database is peristed in a docker volume: database-data, so that the database data won't depend on the container.
 
 
 ### How to set-up:
 
-**1.**: Install Docker and docker-compose. 
+**1:** Install Docker and docker-compose. 
 
 **2:** Clone this Repo.
 
